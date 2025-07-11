@@ -1,0 +1,172 @@
+/* File: stylesheet.css */
+
+body {
+  
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 162, 255);
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    
+}
+nav {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: center;
+    position: relative;
+    left: 5%;
+    gap: 20px; /* Κενό ανάμεσα στα κουμπιά */
+}
+
+nav a {
+    background-color: white;
+    color: blue;
+    text-decoration: none;/* underline overline	 */
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #007bff;  /* Μπλε φόντο στο hover */
+    color: white;               /* Λευκό κείμενο στο hover */
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+    transform: translateY(-3px); /* Ελαφριά "ανύψωση" */
+}
+
+
+
+h1 {
+    text-align: center;
+    font-family: serif;
+    font-style: italic;
+    font-variant: small-caps;
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    margin: 0;
+}
+
+main {
+  
+  position: relative;
+  z-index: 1;
+  width: 60%;
+  margin: 100px auto;
+  padding: 30px;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.7s ease;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ddd;
+    margin-top: 40px;
+}
+
+
+
+img{
+        width: 500px;
+        border-radius: 250px;
+    }
+
+
+
+
+
+
+   
+img.rounded {
+    width: 500px;
+    border-radius: 550px;
+  
+}
+
+
+.greek-flag {
+  position: absolute;
+  top: 25%;
+  left: 3%;
+  width: 90%;
+  height: 30%;
+  background-color: #0d5eaf;
+  z-index: 0;
+  box-shadow: 0 0 8px rgba(0,0,0,0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.greek-flag::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: #0d5eaf;
+  z-index: 1;
+}
+
+.greek-flag::after {
+  content: '';
+  position: absolute;
+  width: 5%;
+  height: 56%;
+  background-color: white;
+  left: 8%;
+  z-index: 2;
+}
+
+.greek-flag .stripe {
+  height: calc(100% / 9);
+  background-color: white;
+}
+
+.greek-flag .stripe:nth-child(odd) {
+  background-color: #0d5eaf;
+}
+
+.greek-flag .cross-horizontal {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 20%;
+  height: 10%;
+  background-color: white;
+  z-index: 2;
+}
+
+
+button.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
